@@ -8,6 +8,7 @@ dotenv.config();
 
 
 const sendMail = async (req, res) => {
+   
     const mail=process.env.COMPANY_EMAIL;
     try{
         const {email, name, phone,message} = req.body;
@@ -26,6 +27,7 @@ const sendMail = async (req, res) => {
             "Demo Request",
             "Thank you for your interest in our services. We will get back to you shortly."
         );
+        return res.json({message:"Email sent successfully"});
     }
     catch(error) {
         console.log(error.message);
