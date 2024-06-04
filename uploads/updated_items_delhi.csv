@@ -1,0 +1,19 @@
+name,cityName,price,pricePerPiece,categoryName,description
+Ultratech Cement,Delhi,500,50,Cement,High quality cement
+ACC Cement,Delhi,600,60,Cement,Affordable cement
+River Sand,Delhi,100,10,Sand,Fine river sand
+M Sand,Delhi,150,15,Sand,Manufactured sand
+10mm Aggregate,Delhi,200,20,Aggregate,10 mm aggregate
+20mm Aggregate,Delhi,250,25,Aggregate,20 mm aggregate
+Tata Steel,Delhi,1500,150,Steel,TMT steel from Tata
+JSW Steel,Delhi,1800,180,Steel,JSW steel rods
+Asian Paints,Delhi,300,30,Paint,Emulsion paint from Asian Paints
+Berger Paints,Delhi,350,35,Paint,Distemper paint from Berger
+Red Bricks,Delhi,200,20,Bricks,Traditional red bricks
+Fly Ash Bricks,Delhi,250,25,Bricks,Fly ash bricks
+Granite Flooring,Delhi,700,70,Flooring,Granite flooring tiles
+Marble Flooring,Delhi,800,80,Flooring,Marble flooring tiles
+Basic Fitting,Delhi,400,40,FittingCost,Basic fitting services
+Premium Fitting,Delhi,450,45,FittingCost,Premium fitting services
+Economy Finisher,Delhi,300,30,FinisherCost,Economy finisher services
+Premium Finisher,Delhi,350,35,FinisherCost,Premium finisher services
