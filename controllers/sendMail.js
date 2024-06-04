@@ -7,6 +7,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 
+
+
 const sendMail = async (req, res) => {
    
     const mail=process.env.COMPANY_EMAIL;
