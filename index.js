@@ -5,6 +5,8 @@ const fileUpload = require('express-fileupload');
 const cors = require('cors');
 const passport = require('passport');
 const session = require('express-session');
+const cookieParser = require("cookie-parser");
+
 
 const app = express();
 dotenv.config();
@@ -13,6 +15,7 @@ dotenv.config();
 require('./passport.js');
 
 // Middleware
+app.use(cookieParser());
 app.use(fileUpload());
 app.use(express.json());
 app.use(cors({
@@ -42,6 +45,7 @@ const authRoutes = require('./routes/auth');
 const getMaterialRoutes = require('./routes/getMaterial');
 const materialAdditionRoutes = require('./routes/MaterialAddition');
 const mailSendRoutes = require('./routes/mailSend');
+const superAdminRoutes = require('./routes/superAdmin');
 
 app.use('/api', userRoutes);
 app.use('/api', fileRoutes);
@@ -49,6 +53,7 @@ app.use('/api', authRoutes);
 app.use('/api', getMaterialRoutes);
 app.use('/api', materialAdditionRoutes);
 app.use('/api', mailSendRoutes);
+app.use('/api', superAdminRoutes);
 
 // Example route
 app.get('/', (req, res) => {

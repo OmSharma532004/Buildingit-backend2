@@ -6,6 +6,7 @@ const jwt = require('jsonwebtoken');
 const otpGenerator = require('otp-generator');
 const OTP = require('../models/OTP');
 const Admin = require('../models/Admin');
+const SuperAdmin = require('../models/SuperAdmin');
 
 
 
@@ -239,4 +240,71 @@ exports.sendotp = async (req, res) => {
       res.status(500).json({ message: 'Internal Server Error' });
     }
   }
+
+  exports.superAdminLogin = async (req, res) => {
+    try {
+      const { name, password } = req.body;
+  
+      const user = await SuperAdmin.findOne({
+        name
+      });
+
+      if (!user) {
+        return res.status(400).json({ message: 'Invalid Credentials' });
+      }
+      //bcrypt compare password
+      const validPassword= await bcrypt.compare(password,user.password);
+
+      if(!validPassword){
+          return res.status(400).json({
+              success:false,
+              message:"Invalid password"
+          })
+      }
+
+
+      const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+        expiresIn: process.env.JWT_EXPIRE
+      });
+
+      user.token = token;
+
+
+      const options = {
+        expires: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000),
+        httpOnly: true,
+      }
+      res.cookie("token", token, options).status(200).json({
+        success: true,
+        token,
+        user,
+        message: `Admin Login Success`,
+      })
+
+    }
+    catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+
+  }
+
+  exports.superAdminSignup = async (req, res) => {
+    try {
+      const { name, password } = req.body;
+      const hashedPassword = await bcrypt.hash(password, 10);
+      const admin = await SuperAdmin.create({
+        name,
+        password: hashedPassword
+      });
+   
+     
+      res.status(201).json({  admin });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Internal Server Error' });
+    }
+  }
+
+
 

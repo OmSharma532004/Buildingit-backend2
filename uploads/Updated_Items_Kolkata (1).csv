@@ -1,0 +1,19 @@
+name,cityName,price,pricePerPiece,categoryName,description
+Ultratech Cement,Kolkata,4108,355,Cement,High quality cement
+ACC Cement,Kolkata,4322,418,Cement,Affordable cement
+River Sand,Kolkata,1920,137,Sand,Fine river sand
+M Sand,Kolkata,4694,504,Sand,Manufactured sand
+10mm Aggregate,Kolkata,1296,174,Aggregate,10 mm aggregate
+20mm Aggregate,Kolkata,2391,240,Aggregate,20 mm aggregate
+Tata Steel,Kolkata,1701,247,Steel,TMT steel from Tata
+JSW Steel,Kolkata,789,81,Steel,JSW steel rods
+Asian Paints,Kolkata,3032,250,Paint,Emulsion paint from Asian Paints
+Berger Paints,Kolkata,4321,333,Paint,Distemper paint from Berger
+Red Bricks,Kolkata,4147,450,Bricks,Traditional red bricks
+Fly Ash Bricks,Kolkata,3987,274,Bricks,Fly ash bricks
+Granite Flooring,Kolkata,1112,117,Flooring,Granite flooring tiles
+Marble Flooring,Kolkata,2320,226,Flooring,Marble flooring tiles
+Basic Fitting,Kolkata,2410,180,FittingCost,Basic fitting services
+Premium Fitting,Kolkata,4132,262,FittingCost,Premium fitting services
+Economy Finisher,Kolkata,3669,540,FinisherCost,Economy finisher services
+Premium Finisher,Kolkata,241,31,FinisherCost,Premium finisher services

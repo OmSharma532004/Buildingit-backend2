@@ -1,0 +1,19 @@
+name,cityName,price,pricePerPiece,categoryName,description
+Ultratech Cement,Chennai,829,103,Cement,High quality cement
+ACC Cement,Chennai,2709,268,Cement,Affordable cement
+River Sand,Chennai,1053,65,Sand,Fine river sand
+M Sand,Chennai,2761,168,Sand,Manufactured sand
+10mm Aggregate,Chennai,4983,402,Aggregate,10 mm aggregate
+20mm Aggregate,Chennai,1940,121,Aggregate,20 mm aggregate
+Tata Steel,Chennai,2266,327,Steel,TMT steel from Tata
+JSW Steel,Chennai,4737,413,Steel,JSW steel rods
+Asian Paints,Chennai,547,60,Paint,Emulsion paint from Asian Paints
+Berger Paints,Chennai,4870,526,Paint,Distemper paint from Berger
+Red Bricks,Chennai,2357,223,Bricks,Traditional red bricks
+Fly Ash Bricks,Chennai,1885,253,Bricks,Fly ash bricks
+Granite Flooring,Chennai,365,53,Flooring,Granite flooring tiles
+Marble Flooring,Chennai,4987,487,Flooring,Marble flooring tiles
+Basic Fitting,Chennai,4348,245,FittingCost,Basic fitting services
+Premium Fitting,Chennai,2324,217,FittingCost,Premium fitting services
+Economy Finisher,Chennai,3356,209,FinisherCost,Economy finisher services
+Premium Finisher,Chennai,908,98,FinisherCost,Premium finisher services
