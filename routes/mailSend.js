@@ -1,7 +1,7 @@
 const express = require('express');
+const { sendMail, sendConstructionDetails } = require('../controllers/sendMail');
 const router = express.Router();
-const sendMail = require('../controllers/sendMail');
-const sendConstructionDetails = require('../controllers/sendMail');
+
 
 router.post('/sendmail', sendMail);
 router.post('/send-construction-details', sendConstructionDetails);

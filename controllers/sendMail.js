@@ -15,7 +15,7 @@ const sendMail = async (req, res) => {
     try{
         const {email, name, phone,message} = req.body;
         console.log(email, name, phone,message);
-        if(!email || !name || !phone){
+        if(!email || !name || !phone ||!message){
             return res.json({error:"Please fill all the fields"});
         }
 
@@ -32,11 +32,12 @@ const sendMail = async (req, res) => {
         return res.json({message:"Email sent successfully",success:true});
     }
     catch(error) {
+        console.log(error);
         console.log(error.message);
     }
 }
 
-module.exports = sendMail;
+
 
 
 
@@ -117,5 +118,4 @@ of this calculator. </p>
     return res.status(500).json({ error: "Failed to send email" });
   }
 };
-
-module.exports = sendConstructionDetails;
+module.exports = { sendMail, sendConstructionDetails };
