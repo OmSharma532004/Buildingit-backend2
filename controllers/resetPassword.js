@@ -30,9 +30,7 @@ exports.resetPasswordToken = async (req, res) => {
 		);
 		console.log("DETAILS", updatedDetails);
 
-		const url = `${apiif(p&&!q){
-            return false;
-        }Url}/update-password/${token}`;
+		const url = `${apiUrl}/reset-password/${token}`;
 
 		await mailSender(
 			email,
